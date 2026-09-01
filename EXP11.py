@@ -1,0 +1,9 @@
+import cv2
+
+img = cv2.imread("sample.jpg")
+
+rotate = cv2.rotate(img, cv2.ROTATE_180)
+
+cv2.imshow("180 Rotation", rotate)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
